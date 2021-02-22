@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认识团队 — Vue.js</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://code.bdstatic.com/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/team.css">
+</head>
+<body>
+<!-- 导航栏 -->
+<header style="position: fixed;height: 60px;width: 100%;background-color: #fff;z-index:100">
+    <div class="header-container">
+        <a style="line-height: 40px;color: #273849;font-weight: 500;font-size: 1.5em;" href="./index.html">
+            <img src="img/logo.png" width="40" height="40" style="flex: 1;vertical-align: middle;" alt="vue logo">
+            <span style="flex: 1;display: inline-block;margin-bottom: 10px">Vue.js</span>
+        </a>
+        <div style="flex: 10;background-color: #fff"></div>
+        <div class="header-search">
+            <input type="text" class="search">
+        </div>
+        {header}
+    </div>
+</header>
+
+<main style="position: relative;top: 61px;width: 100%">
+    <div class="main-container">
+        <!--    帮助文档-->
+        <div class="sidebar">
+            <div class="title-container">
+                <h2 class="title-h2">教程</h2>
+                <select class="version-select">
+                    <option value="v3">3.x-beta</option>
+                    <option value="SELF" selected>2.x</option>
+                    <option value="v1">1.0</option>
+                    <option value="012">0.12</option>
+                    <option value="011">0.11</option>
+                </select>
+            </div>
+            <div class="help-content-container">
+                <div class="help-item">
+                    <h3 style="color: #304455;">基础</h3>
+                    <a class="help-link" href="#">安装</a>
+                    <a class="help-link" href="#">介绍</a>
+                    <a class="help-link" href="#">Vue实例</a>
+                    <a class="help-link" href="#">计算属性和侦听器</a>
+                    <a class="help-link" href="#">Class 与 Style 绑定</a>
+                    <a class="help-link" href="#">条件渲染</a>
+                    <a class="help-link" href="#">列表渲染</a>
+                    <a class="help-link" href="#">事件处理</a>
+                    <a class="help-link" href="#">表单输入绑定</a>
+                    <a class="help-link" href="#">组件基础</a>
+                </div>
+
+                <div class="help-item">
+                    <h3 style="color: #304455;">深入了解组件</h3>
+                    <a class="help-link" href="#">组件注册</a>
+                    <a class="help-link" href="#">Prop</a>
+                    <a class="help-link" href="#">自定义事件</a>
+                    <a class="help-link" href="#">插槽</a>
+                    <a class="help-link" href="#">动态组件 & 异步组件</a>
+                    <a class="help-link" href="#">处理边界情况</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">过渡 & 动画</h3>
+                    <a class="help-link" href="#">进入/离开 & 列表过渡</a>
+                    <a class="help-link" href="#">状态过渡</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">可复用性 & 组合</h3>
+                    <a class="help-link" href="#">混入</a>
+                    <a class="help-link" href="#">自定义指令</a>
+                    <a class="help-link" href="#">渲染函数 & JSX</a>
+                    <a class="help-link" href="#">插件</a>
+                    <a class="help-link" href="#">过滤器</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">工具</h3>
+                    <a class="help-link" href="#">单文件组件</a>
+                    <a class="help-link" href="#">测试</a>
+                    <a class="help-link" href="#">TypeScript 支持</a>
+                    <a class="help-link" href="#">生产环境部署</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">规模化</h3>
+                    <a class="help-link" href="#">路由</a>
+                    <a class="help-link" href="#">状态管理</a>
+                    <a class="help-link" href="#">服务端渲染</a>
+                    <a class="help-link" href="#">安全</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">内在</h3>
+                    <a class="help-link" href="#">深入响应式原理</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">迁移</h3>
+                    <a class="help-link" href="#">从 Vue 1.x 迁移</a>
+                    <a class="help-link" href="#">从 Vue Router 0.7.x 迁移</a>
+                    <a class="help-link" href="#">从 Vuex 0.6.x 迁移到 1.0</a>
+                </div>
+                <div class="help-item">
+                    <h3 style="color: #304455;">更多</h3>
+                    <a class="help-link" href="#">对比其他框架</a>
+                    <a class="help-link" href="#">加入 Vue.js 社区</a>
+                    <a class="help-link" href="#" style="color: #42b983;font-weight: 600;">认识团队</a>
+                    <a class="help-link" href="#" style="padding-left: 1em">核心团队活跃成员</a>
+                    <a class="help-link" href="#" style="padding-left: 1em">核心团队荣誉成员</a>
+                    <a class="help-link" href="#" style="padding-left: 1em">社区伙伴</a>
+                </div>
+                <!--                <div class="help-item">-->
+                <!--                    <h3 style="color: #304455;">更多</h3>-->
+                <!--                    <a class="help-link" href="#">对比其他框架</a>-->
+                <!--                    <a class="help-link" href="#">加入 Vue.js 社区</a>-->
+                <!--                    <a class="help-link" href="#" style="color: #42b983;font-weight: 600;">认识团队</a>-->
+                <!--                </div>-->
+
+
+            </div>
+        </div>
+
+
+        <!--    团队介绍-->
+        <div style="position: relative;left: 16%;">
+            <div class="main">
+                <h1 style="flex: 1;font-weight: 600;color: #273849;font-size: 2em">认识团队</h1>
+                <div class="word-container">
+                    <div>
+                        <!--        <h2 style="flex: 1">认识团队</h2>-->
+                        <h2 class="active-core-team-members" style="flex: 1;color: #304455;">{type}
+                            <button class="distance-user">
+                                <i class="fa fa-map-marker"></i>
+                                <span>谁在我附近</span>
+                            </button>
+                        </h2>
+
+                    </div>
+                    <p>
+                        {introduction}
+                    </p>
+                </div>
+                <!--            卡片容器-->
+                <div class="card-container">
+                    <!--            item-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="{avatar}" alt="{name}" width="80" height="80">
+                        </div>
+                        <!--                介绍-->
+                    </div>
+                    <!--  Evan You 已完成-->
+                    <div class="card-items">
+        <!--                头像-->
+        <div class="picture card-item">
+            <img class="avatar" src="https://github.com/yyx990803.png" alt="Evan You" width="80" height="80">
+        </div>
+        <!--                介绍-->
+        <div class="card-item card-desc">
+            <span class="card-text card-name">Evan You</span>
+
+        <div class="card-text">
+            <span class="card-core-focus">CORE FOCUS</span>
+            <a href="https://github.com/vuejs" target="_blank" rel="noopener noreferrer">vuejs/*</a><i class="fa fa-tip-dian"></i><a href="https://github.com/vuejs-templates" target="_blank" rel="noopener noreferrer">vuejs-templates/*</a>
+        </div>
+        <div class="card-text">
+            <span class="card-core-focus">ECOSYSTEM</span>
+            <a href="https://github.com/vuejs" target="_blank" rel="noopener noreferrer">vuejs/*</a><i class="fa fa-tip-dian"></i><a href="https://github.com/vuejs-templates" target="_blank" rel="noopener noreferrer">vuejs-templates/*</a><a href="https://github.com/kazupon/vue-i18n" target="_blank" rel="noopener noreferrer">vuejs.org</a><i class="fa fa-tip-dian"></i><a href="https://github.com/kazupon/vue-i18n" target="_blank" rel="noopener noreferrer">vuejs.org</a>
+        </div>
+
+        <div class="card-text">
+            <i class="fa fa-briefcase"></i>
+            <span class="card-text-tool-span">Creator @
+                <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>
+            </span>
+        </div>
+
+        <div class="card-text">
+            <i class="fa fa-map-marker"></i>
+            <span class="card-text-tool-span">Jersey City, NJ, USA</span>
+        </div>
+
+        <div class="card-text">
+            <i class="fa fa-globe"></i>
+            <span>中文</span><i class="fa fa-tip-dian"></i><span>English</span>
+        </div>
+            <div class="card-text">
+                                    <i class="fa fa-link"></i>
+                                    <a class="card-text-tool-span" target="_blank" href="https://www.patreon.com/evanyou" rel="noopener noreferrer">patreon.com/evanyou</a>
+                                </div>
+            <div class="card-text">
+                                    <i class="fa fa-github"></i>
+                                    <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                                </div>
+        </div>
+    </div>
+
+                    <!--  Guillaume Chau 已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/octref.png" alt="Evan You" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Pine Wu</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vetur" target="_blank" rel="noopener noreferrer">vuejs/*</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Nomad</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Shanghai, China</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span class="card-text-tool-span"
+                                      style="cursor: help;color: #4682b4;"
+                                      title="Evan You can give technical talks in your preferred language.">
+                            中文
+                            <i class="fa fa-tip"></i>
+                        </span>
+
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                                <span><i class="fa fa-tip-dian"></i>日本語</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a class="card-text-tool-span" target="_blank" rel="noopener noreferrer">patreon.com/evanyou</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Pine Wu 已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/kazupon.png" alt="Kazupon" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Kazupon</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">vuejs.org</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/jp.vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">jp.vuejs.org</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/kazupon/vue-i18n" target="_blank"
+                                   rel="noopener noreferrer">vue-i18n</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/kazupon/vue-cli-plugin-i18n" target="_blank"
+                                   rel="noopener noreferrer">vue-cli-plugin-i18n</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/kazupon/vue-i18n-loader" target="_blank"
+                                   rel="noopener noreferrer">vue-i18n-loader</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/kazupon/eslint-plugin-vue-i18n" target="_blank"
+                                   rel="noopener noreferrer">eslint-plugin-vue-i18n</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/kazupon/vue-i18n-extensions" target="_blank"
+                                   rel="noopener noreferrer">vue-i18n-extensions</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/kazupon/vue-cli-plugin-p11n" target="_blank"
+                                   rel="noopener noreferrer">vue-cli-plugin-p11n</a>
+
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Engineer @ <a href="https://plaid.co.jp"
+                                                                                target="_blank"
+                                                                                rel="noopener noreferrer">PLAID, Inc.</a></span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Tokyo, Japan</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>日本語</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://www.patreon.com/kazupon" target="_blank" class="card-text-tool-span"
+                                   target="_blank" rel="noopener noreferrer">patreon.com/kazupon</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Kazupon 已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/kiaking.png" alt="Kia King Ishii" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Kia King Ishii</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuex" target="_blank"
+                                   rel="noopener noreferrer">vuex</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/vuex-orm" target="_blank" rel="noopener noreferrer">vuex-orm/*</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Tech Talent @ <a href="https://globalbrains.com/"
+                                                                                   target="_blank"
+                                                                                   rel="noopener noreferrer">Global Brain</a></span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Kanagawa, Japan</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>English</span>
+                                <span><i class="fa fa-tip-dian"></i>日本語</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Kia King Ishii 已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/LinusBorg.png" alt="Linusborg" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Linusborg</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs" target="_blank" rel="noopener noreferrer">vuejs/*</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/LinusBorg/portal-vue" target="_blank"
+                                   rel="noopener noreferrer">portal-vue</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Mannheim, Germany</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>Deutsch</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://forum.vuejs.org/" target="_blank">forum.vuejs.org</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Linusborg已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/phanan.png" alt="Phan An" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Phan An</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">vuejs.org</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/phanan/vuequery" target="_blank"
+                                   rel="noopener noreferrer">vuequery</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/phanan/vue-google-signin-button" target="_blank"
+                                   rel="noopener noreferrer">vue-google-signin-button</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Engineering Team Lead @ <a
+                                        href="https://www.internations.org/" target="_blank" rel="noopener noreferrer">InterNations</a></span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Munich, Germany</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>Tiếng Việt</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://vi.vuejs.org" target="_blank">vi.vuejs.org</a>
+                                <a href="https://phanan.net/" target="_blank"><i
+                                        class="fa fa-tip-dian"></i>phanan.net</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phan An已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/znck.png" alt="Rahul Kadyan" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Rahul Kadyan</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/rollup-plugin-vue" target="_blank"
+                                   rel="noopener noreferrer">rollup-plugin-vue</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-issue-helper" target="_blank"
+                                   rel="noopener noreferrer">vue-issue-helper</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/znck/keynote" target="_blank" rel="noopener noreferrer">keynote</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/znck/bootstrap-for-vue" target="_blank"
+                                   rel="noopener noreferrer">bootstrap-for-vue</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/znck/vue-interop" target="_blank" rel="noopener noreferrer">vue-interop</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Software Engineer @ <a href="https://www.myntra.com/"
+                                                                                         target="_blank"
+                                                                                         rel="noopener noreferrer">Myntra</a></span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Bangalore, India</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>हिंदी</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://znck.me" target="_blank">znck.me</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://www.codementor.io/znck" target="_blank">codementor.io/znck</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Rahul Kadyan已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/ulivz.png" alt="ULIVZ" width="80" height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">ULIVZ</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuepress" target="_blank"
+                                   rel="noopener noreferrer">vuepress</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Senior Frontend Developer @
+                        <a href="https://www.antfin.com" target="_blank" rel="noopener noreferrer">AntFinancial</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Hangzhou, China</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span class="card-text-tool-span"
+                                      style="cursor: help;color: #4682b4;"
+                                      title="Evan You can give technical talks in your preferred language.">
+                            中文
+                            <i class="fa fa-tip"></i>
+                        </span>
+
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ULIVZ已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/posva.png" alt="Eduardo" width="80" height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Eduardo</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuefire" target="_blank" rel="noopener noreferrer">vuefire</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-router" target="_blank" rel="noopener noreferrer">vue-router</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/posva/vuex-mock-store" target="_blank"
+                                   rel="noopener noreferrer">vuex-mock-store</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/posva/vue-promised" target="_blank"
+                                   rel="noopener noreferrer">vue-promised</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/posva/vue-motion" target="_blank" rel="noopener noreferrer">vue-motion</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Freelance Developer & Consultant</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Paris, France</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>Español</span>
+                                <span><i class="fa fa-tip-dian"></i>Français</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://www.patreon.com/posva" target="_blank">patreon.com/posva</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Eduardo已完成-->
+                    <div class="card-itemss">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/ota-meshi.png" alt="Yosuke Ota" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Yosuke Ota</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/eslint-plugin-vue" target="_blank"
+                                   rel="noopener noreferrer">eslint-plugin-vue</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Lead Web Engineer @
+                        <a href="https://www.future.co.jp/" target="_blank"
+                           rel="noopener noreferrer">Future Corporation</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Kanagawa, Japan</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>日本語</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Yosuke Ota已完成-->
+                </div>
+                <div class="word-container">
+                    <h2 style="flex: 1;color: #304455;">核心团队荣誉成员</h2>
+                    <P>我们在此致敬过去曾做出过突出贡献的不再活跃的团队成员。</P>
+                </div>
+                <div class="card-container">
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/sodatea.png" alt="Sodatea" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Sodatea</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener noreferrer">vue-cli</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-loader" target="_blank" rel="noopener noreferrer">vue-loader</a>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Hangzhou, China</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span class="card-text-tool-span"
+                                      style="cursor: help;color: #4682b4;"
+                                      title="Evan You can give technical talks in your preferred language.">
+                            中文
+                            <i class="fa fa-tip"></i>
+                        </span>
+
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sodatea已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/NataliaTepluhina.png" alt="Natalia Tepluhina"
+                                 width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Natalia Tepluhina</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">vuejs.org</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener noreferrer">vue-cli</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Senior Frontend Engineer @
+                        <a href="https://gitlab.com/" target="_blank" rel="noopener noreferrer">GitLab</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Kyiv, Ukraine</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>УкраїнськаРусский</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Natalia Tepluhina已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/Justineo.png" alt="GU Yiling" width="80"
+                                 height="80">
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">GU Yiling</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener noreferrer">vue</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/cn.vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">cn.vuejs.org</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/Justineo/vue-awesome" target="_blank"
+                                   rel="noopener noreferrer">Justineo/vue-awesome</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/ecomfe/vue-echarts" target="_blank"
+                                   rel="noopener noreferrer">ecomfe/vue-echarts</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/ecomfe/veui" target="_blank"
+                                   rel="noopener noreferrer">ecomfe/veui</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Senior web developer @
+                        <a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer">Baidu, inc.</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Shanghai, China</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span class="card-text-tool-span"
+                                      style="cursor: help;color: #4682b4;"
+                                      title="Evan You can give technical talks in your preferred language.">
+                            中文
+                            <i class="fa fa-tip"></i>
+                        </span>
+
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--GU Yiling已完成-->
+                    <div class="card-itemss">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/ktsn.png" alt="Katashin" width="80" height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Katashin</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuex" target="_blank"
+                                   rel="noopener noreferrer">vuex</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-class-component" target="_blank"
+                                   rel="noopener noreferrer">vue-class-component</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/ktsn/vue-designer" target="_blank"
+                                   rel="noopener noreferrer">vue-designer</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Software Engineer @
+                        <a href="https://classdo.com" target="_blank" rel="noopener noreferrer">ClassDo</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Singapore</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>日本語</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Katashin已完成-->
+                </div>
+                <div class="word-container">
+                    <div>
+                        <h2 style="flex: 1;color: #304455;">社区伙伴
+                            <button class="distance-user">
+                                <i class="fa fa-map-marker"></i>
+                                <span>谁在我附近</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <p>一些 Vue 的社区成员让这里变得更加丰富多彩，有必要在此特别提及。我们与这些主要合作伙伴建立了更加亲密的关系，经常与他们就即将到来的功能和新闻展开协作。</p>
+                </div>
+                <div class="card-container">
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/jinjiang.png" alt="Jinjiang" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Jinjiang</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/cn.vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">cn.vuejs.org</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-docs-zh-cn" target="_blank"
+                                   rel="noopener noreferrer">vue-docs-zh-cn</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/jinjiang/vue-a11y-utils" target="_blank"
+                                   rel="noopener noreferrer">vue-a11y-utils</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/jinjiang/vue-mark-display" target="_blank"
+                                   rel="noopener noreferrer">vue-mark-display</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/jinjiang/mark2slides" target="_blank"
+                                   rel="noopener noreferrer">mark2slides</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/jinjiang/vue-keyboard-over" target="_blank"
+                                   rel="noopener noreferrer">vue-keyboard-over</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Freelance Developer & Consultant</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Singapore</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span class="card-text-tool-span"
+                                      style="cursor: help;color: #4682b4;"
+                                      title="Evan You can give technical talks in your preferred language.">
+                            中文
+                            <i class="fa fa-tip"></i>
+                        </span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Jinjiang已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/bencodezen.png" alt="Ben Hong" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Ben Hong</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">vuejs.org</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vuepress" target="_blank"
+                                   rel="noopener noreferrer">vuepress</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/events" target="_blank"
+                                   rel="noopener noreferrer">vuejs/events</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Developer Experience (DX) Engineer @ Cypress.io</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Washington, DC, USA</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>English</span>
+                                <i class="fa fa-tip-dian"></i>
+                                <span class="card-text-tool-span"
+                                      style="cursor: help;color: #4682b4;"
+                                      title="Evan You can give technical talks in your preferred language.">
+                            中文
+                            <i class="fa fa-tip"></i>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://bencodezen.io/" target="_blank">bencodezen.io</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Ben Hong 已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/michalsnik.png" alt="Michał Sajnóg" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Michał Sajnóg</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/eslint-plugin-vue" target="_blank"
+                                   rel="noopener noreferrer">eslint-plugin-vue</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/vuejs/vue-devtools" target="_blank"
+                                   rel="noopener noreferrer">vue-devtools</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/michalsnik/vue-computed-helpers" target="_blank"
+                                   rel="noopener noreferrer">vue-computed-helpers</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/michalsnik/vue-content-placeholders" target="_blank"
+                                   rel="noopener noreferrer">vue-content-placeholders</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Senior Frontend Developer / Team Leader @
+                        <a href="https://netguru.co/" target="_blank" rel="noopener noreferrer">Netguru</a>
+                        </span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Poznań, Poland</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>Polski</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Michał Sajnóg已完成-->
+                    <div class="card-items">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/sdras.png" alt="Sarah Drasner" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Sarah Drasner</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">vuejs.org</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/sdras/intro-to-vue" target="_blank"
+                                   rel="noopener noreferrer">intro-to-vue</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/sdras/vue-vscode-snippets" target="_blank"
+                                   rel="noopener noreferrer">vue-vscode-snippets</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/sdras/vue-vscode-extensionpack" target="_blank"
+                                   rel="noopener noreferrer">vue-vscode-extensionpack</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/sdras/sample-vue-shop" target="_blank"
+                                   rel="noopener noreferrer">sample-vue-shop</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Head of Developer Experience @</span>
+                                <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Denver, CO, USA</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>English</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-link"></i>
+                                <a href="https://sarah.dev/" target="_blank">sarah.dev</a>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                                <i class="fa fa-codepen"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sarah Drasner已完成-->
+                    <div class="card-itemss">
+                        <!--                头像-->
+                        <div class="picture card-item">
+                            <img class="avatar" src="https://github.com/shentao.png" alt="Damian Dulisz" width="80"
+                                 height="80">
+
+                        </div>
+                        <!--                介绍-->
+                        <div class="card-item card-desc">
+                            <span class="card-text card-name">Damian Dulisz</span>
+                            <div class="card-text">
+                                <span class="card-core-focus">CORE FOCUS</span>
+                                <a href="https://github.com/vuejs/news.vuejs.org" target="_blank"
+                                   rel="noopener noreferrer">news.vuejs.org</a>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-core-focus">ECOSYSTEM</span>
+                                <a href="https://github.com/shentao/vue-multiselect" target="_blank"
+                                   rel="noopener noreferrer">shentao/vue-multiselect</a>
+                                <i class="fa fa-tip-dian"></i>
+                                <a href="https://github.com/shentao/vue-global-events" target="_blank"
+                                   rel="noopener noreferrer">shentao/vue-global-events</a>
+                            </div>
+                            <div class="card-text">
+                                <i class="fa fa-briefcase"></i>
+                                <span class="card-text-tool-span">Consultant</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="card-text-tool-span">Wrocław, Poland</span>
+                            </div>
+
+                            <div class="card-text">
+                                <i class="fa fa-globe"></i>
+                                <span>Polsk</span>
+                                <span><i class="fa fa-tip-dian"></i>English</span>
+                            </div>
+
+
+                            <div class="card-text">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-twitter" style="color: #1da1f3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-container">
+            <span>←<a href="/v2/guide/join.html" class="size">加入 Vue.js 社区</a>
+            </span>
+                    <div class="bottom-items">
+                        发现错误？想参与编辑？
+                        <a href="https://github.com/vuejs/cn.vuejs.org/blob/master/src/v2/guide/team.md" rel="noopener"
+                           target="_blank" class="size">
+                            在 GitHub 上编辑此页！
+                        </a>
+                    </div>
+
+                </div>
+                <!--    留空区域，只是用来占位-->
+                <div style="flex: 3"></div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    user-select: none;
+}
+
+/* For scrollable content */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+header, footer {
+    flex-shrink: 0;
+}
+#svgeditor-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.svgeditor-body {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+ul {
+    margin: 0.2em;
+    padding: 0px;
+    list-style: none;
+}
+.svgeditor-menu {
+    display: inline-block;
+    color: var(--vscode-sideBar-foreground);
+    background-color: var(--vscode-sideBar-background);
+    width: calc(100% / 8);
+    text-align: center;
+}
+.svgeditor-menu:hover:not(.svgeditor-selected) {
+    color: var(--vscode-list-hoverForeground);
+    background-color: var(--vscode-list-hoverBackground);
+}
+.svgeditor-selected, select option[selected] {
+    color: var(--vscode-list-activeSelectionForeground);
+    background-color: var(--vscode-list-activeSelectionBackground);
+}
+.svgeditor-button {
+    display: inline-block;
+    padding: 0em 0.5em;
+    text-align: center;
+    color: var(--vscode-button-foreground);
+    background-color: var(--vscode-button-background);
+}
+.svgeditor-button:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}
+select {
+    background-color: var(--vscode-dropdown-background);
+    border: var(--vscode-dropdown-border);
+    color: var(--vscode-dropdown-foreground);
+    margin-bottom: 0.5em;
+}
+select option {
+    background-color: var(--vscode-dropdown-listBackground);
+}
+.svgeditor-svgcontainer {
+    display: block;
+    background-color: transparent;
+    background-image: linear-gradient(45deg, var(--vscode-sideBar-background) 25%, transparent 25%, transparent 75%, var(--vscode-sideBar-background) 75%, var(--vscode-sideBar-background)), 
+    linear-gradient(45deg, var(--vscode-sideBar-background) 25%, transparent 25%, transparent 75%, var(--vscode-sideBar-background) 75%, var(--vscode-sideBar-background));
+    background-size:8em 8em;
+    background-position:0 0, 4em 4em
+}
+.svgeditor-shape-handler {
+    fill: var(--vscode-activityBarBadge-background);
+    stroke: var(--vscode-activityBarBadge-foreground);
+    stroke-width: 1px;
+}
+.svgeditor-shape-handler-line {
+    stroke: var(--vscode-activityBarBadge-foreground);
+    /* stroke-width: 2px; */
+}
+.svgeditor-shape-handler-fake {
+    fill: var(--vscode-activityBarBadge-background);
+    stroke: var(--vscode-activityBarBadge-foreground);
+    stroke-width: 1px;
+    opacity: 0.5;
+}
+.svgeditor-shape-handler-line-fake {
+    stroke: var(--vscode-activityBarBadge-foreground);
+    /* stroke-width: 2px; */
+    /* stroke-dasharray: 4px; */
+    opacity: 0.5;
+}
+.svgeditor-colorpicker {
+    padding: 0.5em;
+    background: var(--vscode-input-background);
+}
+.svgeditor-active, *:not(input[type="range"]):focus {
+    outline: var(--vscode-inputOption-activeBorder) solid 1px !important;
+}
+.svgeditor-bold {
+    font-weight: bold;
+    font-size: small;
+}
+.svgeditor-colorbox {
+    font-weight: normal;
+    display: inline-block;
+    min-width: 1em;
+    min-height: 1em;
+    cursor: pointer;
+}
+.svgeditor-group {
+    fill: none;
+    stroke: var(--vscode-inputValidation-warningBorder);
+    /* stroke-dasharray: 4px; */
+}
+.svgeditor-svg {
+    fill: none;
+    stroke: var(--vscode-inputValidation-infoBorder);
+    /* stroke-dasharray: 4px; */
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--vscode-scrollbarSlider-background);
+    height: 2px;
+    margin: 1em 0;
+    display: block;
+}
+input[type="range"]:active {
+    background-color: var(--vscode--scrollbarSlider-activeBackground);
+}
+input[type="range"]:hover {
+    background-color: var(--vscode-scrollbarSlider-hoverBackground);
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.svgeditor-icon {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+    color: var(--vscode-titleBar-activeForeground);
+}

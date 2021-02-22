@@ -1,0 +1,216 @@
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 2;
+    width: 16%;
+    position: fixed;
+    overflow:hidden;
+    overflow-y: scroll;
+    padding-bottom: 2em;
+    height: 90vh;
+
+}
+
+.main {
+    flex: 10;
+    display: flex;
+    width: 84%;
+    flex-direction: column;
+    /*margin-left: 20em;*/
+    padding: 1em 0 0 20em;
+    /*align-items: center;*/
+}
+
+.word-container{
+    width: 700px;
+}
+
+.active-core-team-members{
+    margin: 45px 0 0.8em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #ddd;
+}
+
+p {
+    word-spacing: 0.05em;
+    line-height: 1.6em;
+    margin: 1.2em 0 -1.2em;
+    padding-bottom: 1.2em;
+    /*position: relative;*/
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 16px;
+    text-align: center;
+}
+
+.fa-briefcase:before {
+    content: "\f0b1";
+}
+
+.fa-map-marker:before {
+    content: "\f041";
+}
+.fa-tip:before {
+    content: "\f06a";
+    font-family: FontAwesome;
+    font-size: 0.75em;
+    vertical-align: super;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+.fa-tip-dian:before{
+    display: inline-block;
+    content: "·";
+    margin: 0 8px;
+}
+.fa-globe:before {
+    content: "\f0ac";
+}
+
+.fa-chain:before, .fa-link:before {
+    content: "\f0c1";
+}
+a {
+    cursor: pointer;
+    text-transform:lowercase;
+    color: #42b983;
+}
+.fa-codepen:before {
+    content: "\f1cb";
+}
+
+.point::after {
+    display: inline-block;
+    content: "·";
+    margin: 0 8px;
+}
+
+dt::after {
+    display: block;
+    content: " ";
+    margin-top: 0.6em;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+
+
+.card-items {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.card-itemss {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-item {
+    flex-shrink: 1;
+}
+
+.card-desc {
+    width: 620px;
+    margin-left: 2em;
+}
+
+.card-name {
+    color: #304455;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.card-text {
+    margin-bottom: .5em;
+    color: #304455;
+}
+.card-text-tool-span{
+    margin-left: .3em;
+}
+.card-core-focus{
+    text-transform: uppercase;
+    font-size: 0.84em;
+    font-weight: 600;
+}
+
+.bottom-container{
+    color: #4f5959;
+    padding-top: 1em;
+}
+
+.distance-user{
+    display: inline-block;
+    padding: 0.4em 0.7em 0.45em;
+    font-weight: bold;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    line-height: 1;
+    border: none;
+    background: #304455;
+    color: #fff;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-top: 0.3em;
+}
+.size{
+    font-weight: 600;
+    color: #42b983;
+}
+
+.bottom-items{
+    color: #4f5959;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 4em;
+}
+
+.title-container {
+    padding: 1.2em 0 0 1em;
+}
+
+.title-h2 {
+    font-size: 1.5em;
+    display: inline-block;
+    color: #273849;
+    margin-right: 4px;
+}
+
+.help-content-container {
+    flex-direction: column;
+}
+
+.help-item {
+    /*overflow: auto;*/
+    flex-shrink: 1;
+    padding: 0 0 0 1em;
+}
+
+.help-link {
+    color: #4f5959;
+    display: block;
+    margin-bottom: .7em;
+}
